@@ -24,7 +24,7 @@ from app.routers import conversations as conversations_router
 
 load_dotenv()
 
-FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000")
+FRONTEND_URL: str = os.getenv("FRONTEND_URL", "https://ai-knowledge-agent-eas9arbrc-sanathhh05s-projects.vercel.app/")
 
 # ---------------------------------------------------------------------------
 # App instance
