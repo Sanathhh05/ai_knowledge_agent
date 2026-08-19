@@ -11,7 +11,8 @@ export function TopNav() {
     // Basic auth check for email display
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://127.0.0.1:8000/auth/me", {
+      const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+      fetch(`${API}/auth/me`, {
         headers: { Authorization: `Bearer ${token}` }
       })
         .then(res => res.json())
