@@ -1,0 +1,75 @@
+# =============================================================================
+# AI Knowledge Assistant — Root .gitignore
+# =============================================================================
+
+# ---- Python / Backend -------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.so
+
+# Virtual environment
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+ENV/
+env/
+
+# Environment variables (NEVER commit secrets)
+.env
+.env.local
+.env.*.local
+
+# SQLite (if ever used for testing)
+*.db
+*.sqlite3
+
+# Alembic (if added later)
+# backend/alembic/versions/*.py  # uncomment if you want to exclude migrations
+
+# ---- Node.js / Frontend -----------------------------------------------------
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# ---- IDE / OS ---------------------------------------------------------------
+.vscode/settings.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs -------------------------------------------------------------------
+*.log
+logs/
